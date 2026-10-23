@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddImobilActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adauga_un_imobil_nou"
+        />
+
+    <EditText
+        android:id="@+id/etAdresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="@string/adresa_imobilului"
+        android:inputType="text"/>
+
+    <CheckBox
+        android:id="@+id/cbParcare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/are_loc_de_parcare"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_imobil"/>
+
+    <RadioGroup
+        android:id="@+id/rgTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbApartament"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apartament"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbCasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/casa" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerOras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rating_condi_ii"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchMobilat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/este_complet_mobilat"/>
+
+    <Button
+        android:id="@+id/btnSalveaza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salveaz_si_trimite" />
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/proprietate_nou"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completeaz_detaliile_imobilului_design_ai"
+            android:textSize="14sp"
+            android:textColor="#7F8C8D"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/etAdresaAi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/adresa_complet"
+            android:inputType="textPostalAddress"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/cbParcareAi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/include_loc_de_parcare"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#34495E"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tipul_propriet_ii"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioGroup
+                android:id="@+id/rgTipAi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/rbApartamentAi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apartament"
+                    android:checked="true"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/rbCasaAi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Casă"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oraș"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"/>
+
+        <Spinner
+            android:id="@+id/spinnerOrasAi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evaluare_condi_ii"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"/>
+
+        <RatingBar
+            android:id="@+id/ratingBarAi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:progressTint="#F39C12"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchMobilatAi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/complet_mobilat"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            android:textColor="#34495E"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnSalveazaAi"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/finalizeaz_ad_ugarea"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#3498DB"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
