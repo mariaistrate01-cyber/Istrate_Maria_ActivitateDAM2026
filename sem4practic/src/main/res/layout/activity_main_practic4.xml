@@ -16,6 +16,12 @@
         android:text="@string/adaug_imobil" />
 
     <Button
+        android:id="@+id/btnVeziLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vezi_lista"/>
+
+    <Button
         android:id="@+id/btnDeschideFormularAi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

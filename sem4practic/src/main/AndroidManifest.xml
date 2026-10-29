@@ -22,8 +22,15 @@
             android:name=".AddImobilActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity android:name=".AddImobilAiActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ListaImobileActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

@@ -20,4 +20,9 @@
     <string name="adaug_imobil">Adaugă Imobil</string>
     <string name="adaug_imobil_design_ai">Adaugă Imobil (Design AI)</string>
     <string name="aici_va_ap_rea_imobilul_ad_ugat">Aici va apărea imobilul adăugat...</string>
+    <string name="vezi_lista">Vezi lista</string>
+    <string name="niciun_imobil_ad_ugat_momentan">Niciun imobil adăugat momentan</string>
+    <string name="adaug_imobilul">Adaugă Imobil</string>
+    <string name="adaug_imobil_ai">Adaugă Imobil (AI)</string>
+    <string name="vezi_lista_imobile">Vezi Lista Imobile</string>
 </resources>
