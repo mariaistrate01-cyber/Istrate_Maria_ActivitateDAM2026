@@ -22,12 +22,12 @@ public class MainActivityPractic4 extends AppCompatActivity {
             result -> {
                 if (result.getResultCode() == RESULT_OK && result.getData() != null) {
 
-                    Imobil imobil = (Imobil) result.getData().getSerializableExtra("imobil_nou");
+                    Imobil imobil = (Imobil) result.getData().getParcelableExtra("imobil_nou");
 
                     if (imobil != null) {
                         listaImobile.add(imobil);
 
-                        tvRezultat.setText(imobil.toString());
+                        tvRezultat.setText(imobil.getAdresa());
 
                         Toast.makeText(this, "Adăugat: " + imobil.toString(), Toast.LENGTH_LONG).show();
                     }
@@ -59,7 +59,7 @@ public class MainActivityPractic4 extends AppCompatActivity {
 
         btnVeziLista.setOnClickListener(v->{
             Intent intent = new Intent(MainActivityPractic4.this, ListaImobileActivity.class);
-            intent.putExtra("lista_imobile", listaImobile);
+            intent.putParcelableArrayListExtra("lista_imobile", listaImobile);
             startActivity(intent);
         });
     }
